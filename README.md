@@ -4,7 +4,7 @@ This repo is a document that shows how to run Python codes in an HPC Lab under S
 ## Putting a script to the process queue
 - Let's say, you have a file named "run.py".
 - Then run [submit.sh](Queue/submit.sh) file:
-- ```
+  ```
   ./submit.sh
   ```
 - This will queue your file (run.py) to process.
@@ -13,7 +13,7 @@ This repo is a document that shows how to run Python codes in an HPC Lab under S
 
 ## Running a script directly
 - If you need to run a .py file directly on Terminal, connect to one of the nodes:
-- ```
+  ```
   srun -p short -N1 -n1 --gres=gpu:1 --pty bash
   ```
   You can change the number of the GPU's by setting "--gres" parameter to something like "gpu:2".
