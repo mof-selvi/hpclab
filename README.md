@@ -1,7 +1,7 @@
 # hpclab
 This repo is a document that shows how to run Python codes in an HPC Lab under Slurm.
 
-## Putting a script to the process queue
+## Putting a script to the process queue ( [files](Queue) )
 - Let's say, you have a file named "run.py".
 - Then run [submit.sh](Queue/submit.sh) file:
   ```
@@ -11,7 +11,7 @@ This repo is a document that shows how to run Python codes in an HPC Lab under S
 - When done, you fill find a file with a name like "1234-deep.out" in the working directory.
 - To change gpu numbers, log file name etc., edit "submit.sh" file.
 
-## Running a script directly
+## Running a script directly ( [files](Straight) )
 - If you need to run a .py file directly on Terminal, connect to one of the nodes:
   ```
   srun -p short -N1 -n1 --gres=gpu:1 --pty bash
