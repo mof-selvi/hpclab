@@ -1,7 +1,7 @@
 # hpclab
 This repo is a document that shows how to run Python codes in an HPC Lab under Slurm.
 
-There are 2 ways to run a Python code in a Slurm-based HPC Lab. Either put your script to the queue or connect to a node and run it directly.
+There are 2 ways to run a Python code in a Slurm-based HPC Lab. Either put your script to the queue, or connect to a node and run it directly.
 
 ## Putting a script to the process queue ( [files](Queue) )
 - Let's say, you have a file named "run.py".
