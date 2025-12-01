@@ -23,6 +23,11 @@ There are 2 ways to run a Python code in a Slurm-based HPC Lab. Either put your 
   ```
   srun -p short -N1 -n1 --gres=gpu:1 --job-name=job02 --nodelist=ne02 --pty bash
   ```
+  
+  ```
+  srun --time=14-0 -N1 -n1 --gres=gpu:1 --job-name=job01 --nodelist=ne01,ne02,ne03 --pty bash
+  ```
+  
   You can change the number of the GPU's by setting "--gres" parameter to something like "gpu:2".
 - You were working under login previously:
   "(base) mselvi@login:~$"
